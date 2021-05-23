@@ -14,11 +14,11 @@
 
 - 各ディストリビューションのパッケージマネージャーを利用すると手順がバラバラになるため、curlでインストール。
 
-´´´
+```
 curl -O https://releases.hashicorp.com/terraform/0.15.3/terrafrom_0.15.3_linux_amd64.zip
 unzip terrafrom_0.15.3_linux_amd64.zip
 mv terraform /usr/bin/terraform
-´´´
+```
 
 ### GCP credential ファイルの用意
 
@@ -26,16 +26,20 @@ mv terraform /usr/bin/terraform
 - サービスアカウントの作成はブラウザで実施
 - 下記コマンドでcloud shell上にcredentialファイルをダウンロード
 
-´´´
+```
 gcloud iam service-accounts keys create path_to_save/account.json \
 --iam-account [service-account name]@[PROJECT_ID].iam.gserviceaccount.com
-´´´
+```
 
 ### terraform init
 
-
+- terrafrom の初期に実施するコマンド
+- provider に指定したものに関してダウンロードとかをしている
 
 ### terraform plan
 
+- terrafrom の実行前に変更を確認できるコマンド(dry-run)
+
 ### terraform apply
 
+- terraform の設定反映
