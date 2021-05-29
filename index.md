@@ -71,7 +71,7 @@ mqq main.tf
 ### terraform 実行後
 
 - terrafrom apply後、tfstateファイルが作成される(tfstateをローカルに保存した場合)
-  -
+
 ```
 [cloudshell ~/terraform-tutorial]$ tree
 .
