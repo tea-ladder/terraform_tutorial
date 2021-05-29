@@ -48,10 +48,12 @@ gcloud iam service-accounts keys create path_to_save/account.json \
 
 ### terraform plan
 
+- [document](https://www.terraform.io/docs/cli/commands/plan.html)
 - terrafrom の実行前に変更を確認できるコマンド(dry-run)
 
 ### terraform apply
 
+- [document](https://www.terraform.io/docs/cli/commands/apply.html)
 - terraform の設定反映
 
 ## terraform tutorial ディレクトリ構成
@@ -85,7 +87,6 @@ mqq terraform.tfstate
 
 ## 所感
 
-- クラウドインフラの設定をコードで管理できる
 - コードを使いまわす(変数利用)ことで、同じインフラ構築を簡単に作成することができる
 - tutrorial 実施時点では、インフラの変更にはクセがあるため最初に設計・方針を決めておいたほうが良いと感じた
 
@@ -94,8 +95,8 @@ mqq terraform.tfstate
 
 ### GCPのアカウントの保存先
 
-- account.jsonをローカルに置いているが、別の管理方法は似ないのか？
-  -
+- account.jsonをローカルに置いているが、別の管理方法はないのか？
+  - 複数の担当者のローカルPC上にCredentialを置いて利用するような運用は避けたい
 
 ### tfstateの保存先
 
